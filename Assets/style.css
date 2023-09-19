@@ -46,32 +46,27 @@ header a {
 
 /* Style for the left side (heading) */
 .heading {
+    width:180px;
+    height:auto;
     display: block;
     padding: 5px;
     font-size:40px;
     color:darkblue;
-    border-right:5px solid black;
 }
 
 /* Style for the right side (content) */
 .content {
-    flex:80%;
+    flex:1;
     padding: 10px;
+    border-left: 5px blue solid;
 }
+.content img{
+    width:100px;
+    height:100px;
 
+}
 .content p {
     margin-bottom: 20px;
-}
-
-/* Media query for screens smaller than 768px (adjust the breakpoint as needed) */
-@media screen and (max-width: 768px) {
-    .container {
-        flex-direction: column;
-    }
-
-    .heading {
-        border: none;
-    }
 }
 
 .img{
@@ -83,8 +78,8 @@ width:100%
 /* Style for the work item container */
 .work-item {
 position: relative; /* Position relative is needed for positioning child elements */
-margin-bottom: 10px; /*Add margin for spacing between work items  */
-display: grid;
+display:grid;
+
 }
 
 /* Style for the image */
@@ -94,6 +89,7 @@ display: block;
 width:500px;
 height:auto;
 }
+
 .work-item img:hover{
 opacity: 0.7;
 border: 5px solid #007bff; 
@@ -110,17 +106,22 @@ padding: 10px 15px;
 border-radius: 5px;
 font-size: 20px; 
 }
-.container {
-display: grid;
-grid-template-columns: 1fr 1fr; 
-grid-template-rows: auto auto auto; 
-gap: 10px; 
+
+.container2 {
+border-left: 5px blue solid;
+margin-top: 10px;
+display:grid;
+grid-template:
+"grid-1" 100%
+"grid-2 grid-3"50% 50%
+"grid-4 grid-5"50% 50%;
+grid-template-columns: 
 }
 
 .work-item {
 background-color: #fff; /* Set a background color */
-padding: 20px; /* Add some padding to each item */
-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2); 
+padding: 10px;
+margin: 5px; 
 }
 
 .work-item img {
@@ -128,10 +129,37 @@ max-width: 100%; /* Ensure images don't exceed their container width */
 }
 
 .text {
+margin-left: 20px;
+margin-bottom:20px;
 text-align: center; /* Center align text within each item */
 }
 
-ul {
+.container ul {
+border-left: 5px blue solid;
+margin-top: 10px;
 display: flex; 
-justify-content: space-between;
+padding: 50px;
+justify-content:space-between;
+}
+
+/* Media query for screens smaller than 768px (adjust the breakpoint as needed) */
+@media screen and (max-width: 768px) {
+    .container2 {
+        display:flex;
+        flex-direction: column;
+        border-left:none;
+        border-top:5px blue solid;
+    }
+    .work-item{
+        display:flex;
+        flex-wrap: wrap;
+    }
+    .content{
+        border-left: none;
+        border-top:5px blue solid;
+    }
+    .container ul{
+        border-left: none;
+        border-top:5px blue solid;
+    }
 }
