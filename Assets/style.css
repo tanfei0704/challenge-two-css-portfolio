@@ -1,145 +1,137 @@
+header ul {
+    display: flex;
+    justify-content:end;
+    align-items: center;
+    background-color:#1f2325;
+}
 
-   header ul {
-        display: flex;
-        justify-content:end;
-        align-items: center;
-        background-color:#1f2325;
-    }
-    
-    h1{
-    color:black;
-    font-size:40px;
-    background-color:aquamarine;
-    padding-inline: 50px;
-    
-    }
+h1{
+color:black;
+font-size:40px;
+background-color:aquamarine;
+padding-inline: 50px;
 
-    .head {
-        background: #1f2325;
-        padding: 30px;
-        display:flex;
-        align-items: center;
-        justify-content:space-between;
-        }
+}
 
-    h2{
-        background-image:url(https://previews.123rf.com/images/digifuture/digifuture1201/digifuture120100120/11890830-blue-painted-wooden-wall.jpg);
-        background-size:cover;
-        padding:50px;
-        margin-top:-10px;
-        border:30px;
-        font-size:25px;
-        display:flex;
-        justify-content:flex-end;
-        align-items:flex-end;
+.head {
+    background: #1f2325;
+    padding: 30px;
+    display:flex;
+    align-items: center;
+    justify-content:space-between;
     }
 
-    header a {
-        margin:5px;
-        color:aquamarine;
-        }
+h2{
+    background-image:url(https://previews.123rf.com/images/digifuture/digifuture1201/digifuture120100120/11890830-blue-painted-wooden-wall.jpg);
+    background-size:cover;
+    padding:50px;
+    margin-top:-10px;
+    border:30px;
+    font-size:25px;
+    display:flex;
+    justify-content:flex-end;
+    align-items:flex-end;
+}
+
+header a {
+    margin:5px;
+    color:aquamarine;
+    }
 /* Common styles for both desktop and mobile */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+/* Style for the left side (heading) */
+.heading {
+    display: block;
+    padding: 5px;
+    font-size:40px;
+    color:darkblue;
+    border-right:5px solid black;
+}
+
+/* Style for the right side (content) */
+.content {
+    flex:80%;
+    padding: 10px;
+}
+
+.content p {
+    margin-bottom: 20px;
+}
+
+/* Media query for screens smaller than 768px (adjust the breakpoint as needed) */
+@media screen and (max-width: 768px) {
     .container {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: flex-start;
+        flex-direction: column;
     }
 
-    /* Style for the left side (heading) */
     .heading {
-        flex: 1;
-        padding: 10px;
-        font-size:40px;
-        color:darkblue;
-        border-right:5px solid black;
+        border: none;
     }
+}
 
-    /* Style for the vertical line */
-    .separator {
-        width: 10px;
-        background-color: #ccc;
-        margin: 0 10px;
-    }
-
-    /* Style for the right side (content) */
-    .content {
-        flex: 2;
-        padding: 20px;
-    }
-
-    .content p {
-        margin-bottom: 20px;
-    }
-
-    /* Media query for screens smaller than 768px (adjust the breakpoint as needed) */
-    @media screen and (max-width: 768px) {
-        .container {
-            flex-direction: column;
-        }
-
-        .heading {
-            border: none;
-        }
-    }
-/* style for the frist work item */
-.first-work-item img{
-    max-width:100%;
-    display:block;
-    width:100%
+.img{
+max-width:100%;
+display:block;
+width:100%
 }
 
 /* Style for the work item container */
- .work-item {
-    position: relative; /* Position relative is needed for positioning child elements */
-    margin-bottom: 10px; /*Add margin for spacing between work items  */
-    display: grid;
- }
+.work-item {
+position: relative; /* Position relative is needed for positioning child elements */
+margin-bottom: 10px; /*Add margin for spacing between work items  */
+display: grid;
+}
 
 /* Style for the image */
 .work-item img {
-    max-width: 100%; /* Ensure the image doesn't exceed its container */
-    display: block;
-    width:500px;
-    height:auto;
+max-width: 100%; /* Ensure the image doesn't exceed its container */
+display: block;
+width:500px;
+height:auto;
 }
 .work-item img:hover{
-    opacity: 0.7;
-    border: 5px solid #007bff; 
+opacity: 0.7;
+border: 5px solid #007bff; 
 }
 
 /* Style for the h4 & p (project title) */
 .text{
-    position: absolute;
-    bottom: 10px; 
-    left: 0; 
-    padding: 10px;
-    background-color: rgba(17, 225, 201, 0.7); 
-    padding: 10px 15px;
-    border-radius: 5px;
-    font-size: 20px; 
+position: absolute;
+bottom: 10px; 
+left: 0; 
+padding: 10px;
+background-color: rgba(17, 225, 201, 0.7); 
+padding: 10px 15px;
+border-radius: 5px;
+font-size: 20px; 
 }
 .container {
-    display: grid;
-    grid-template-columns: 1fr 1fr; 
-    grid-template-rows: auto auto auto; 
-    gap: 10px; 
-  }
-  
-  .work-item {
-    background-color: #fff; /* Set a background color */
-    padding: 20px; /* Add some padding to each item */
-    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2); 
-  }
-  
-  .work-item img {
-    max-width: 100%; /* Ensure images don't exceed their container width */
-  }
+display: grid;
+grid-template-columns: 1fr 1fr; 
+grid-template-rows: auto auto auto; 
+gap: 10px; 
+}
 
-  .text {
-    text-align: center; /* Center align text within each item */
-  }
-  
+.work-item {
+background-color: #fff; /* Set a background color */
+padding: 20px; /* Add some padding to each item */
+box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2); 
+}
+
+.work-item img {
+max-width: 100%; /* Ensure images don't exceed their container width */
+}
+
+.text {
+text-align: center; /* Center align text within each item */
+}
+
 ul {
-    display: flex; 
-    justify-content: space-between;
+display: flex; 
+justify-content: space-between;
 }
