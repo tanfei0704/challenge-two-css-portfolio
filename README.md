@@ -27,14 +27,12 @@ THEN I am presented with a responsive layout that adapts to my viewport
 
 # Usage:
 1.create a folder;
-2.clone link "" in your foler on terminal;
+2.clone link "git@github.com:tanfei0704/challenge-two-css-portfolio.git" in your foler on terminal;
 3.open index.html file;
 4.right click on mouse to look through on default broswer;
 
-Or you can directly copy& paste link "" on your broswer.
+Or you can directly copy& paste link "https://tanfei0704.github.io/challenge-two-css-portfolio/" on your broswer.
 
 The web should be looked like:
-screenshot
-
-
+![screenshot](/Users/tanfei/Desktop/bootcamp-homework/challenge-two-css-portfolio/challenge-two-css-portfolio/Screenshot 2023-09-19 at 10.24.33 AM.png)
 
