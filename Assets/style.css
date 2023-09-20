@@ -1,4 +1,4 @@
-header ul {
+nav {
     display: flex;
     justify-content:end;
     align-items: center;
@@ -20,17 +20,29 @@ padding-inline: 50px;
     align-items: center;
     justify-content:space-between;
     }
+.content-wrap{
+    background-color:aquamarine;
+    display:flex;
+    align-items:center;
+    flex-direction: column;
+    margin:o auto;
+    padding 60px 50px;
+    max-width:3000px;
+    overflow:hidden;
+}
+.content-wrap img{
+    margin:10px;
+    width:150px;
+    height:150px;
+    border-radius:50%;
+}
 
-h2{
-    background-image:url(https://previews.123rf.com/images/digifuture/digifuture1201/digifuture120100120/11890830-blue-painted-wooden-wall.jpg);
+h2 {
+    background-color:yellow;
     background-size:cover;
-    padding:50px;
-    margin-top:-10px;
+    padding:10px;
     border:30px;
     font-size:25px;
-    display:flex;
-    justify-content:flex-end;
-    align-items:flex-end;
 }
 
 header a {
@@ -111,11 +123,8 @@ font-size: 20px;
 border-left: 5px blue solid;
 margin-top: 10px;
 display:grid;
-grid-template:
-"grid-1" 100%
-"grid-2 grid-3"50% 50%
-"grid-4 grid-5"50% 50%;
-grid-template-columns: 
+grid-template-columns: 400px 400px;
+grid-template-rows: repeat(3, 1fr);
 }
 
 .work-item {
@@ -161,5 +170,10 @@ justify-content:space-between;
     .container ul{
         border-left: none;
         border-top:5px blue solid;
+    }
+}
+@media (min-width:935px){
+    .content-wrap{
+        flex-direction:row;
     }
 }

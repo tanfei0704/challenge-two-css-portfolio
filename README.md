@@ -34,5 +34,5 @@ THEN I am presented with a responsive layout that adapts to my viewport
 Or you can directly copy& paste link "https://tanfei0704.github.io/challenge-two-css-portfolio/" on your broswer.
 
 The web should be looked like:
-![screenshot](/Users/tanfei/Desktop/bootcamp-homework/challenge-two-css-portfolio/challenge-two-css-portfolio/Screenshot 2023-09-19 at 10.24.33 AM.png)
+![screenshot](./Assets/homework%202.png)
 
